@@ -21,10 +21,7 @@ expo install expo-font @expo-google-fonts/montserrat
 
 import { useFonts, Inter_900Black } from '@expo-google-fonts/montserrat';
 
-let [fontsLoaded] = useFonts({
-    Inter_900Black,
-  });
 
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
+# AppLoading
+Installation
+expo install expo-app-loading
