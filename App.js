@@ -11,8 +11,9 @@ import { View } from "react-native-web";
 
 export default function App() {
   const [fontesCarregadas] = useFonts({
-    MontserratRegular: Montserrat_400Regular,
-    MontserratBold: Montserrat_700Bold,
+
+    "MontserratRegular": Montserrat_400Regular,
+    "MontserratBold": Montserrat_700Bold,
   });
   if (!fontesCarregadas) {
     return <View />;
