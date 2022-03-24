@@ -11,6 +11,33 @@ const cesta = {
     nomeFazenda: "Frans Olifrans Farm",
     descricao: "Cesta de produtas especiamente para você e sua familia",
     preco: "R$ 60,00",
+    botao: "Compar"
+  },
+
+  itens: {
+    titulo: "Itens da cesta",
+    lista: [
+      {
+        nome: "Tomate",
+        imagem: tomate,
+      },
+      {
+        nome: "Brócolis",
+        imagem: brocolis,
+      },
+      {
+        nome: "Batata",
+        imagem: batata,
+      },
+      {
+        nome: "Pepino",
+        imagem: pepino,
+      },
+      {
+        nome: "Abóbora",
+        imagem: abobora,
+      },
+    ],
   },
 };
 
