@@ -25,3 +25,18 @@ import { useFonts, Inter_900Black } from '@expo-google-fonts/montserrat';
 # AppLoading
 Installation
 expo install expo-app-loading
+
+
+
+
+Corrigir erro tela vermelha do expo react-native
+
+1- acesse as pastas node_modules/react-native/scripts
+dentro da pasta "scripts" no arquivo "launchPackager.bat" adcionar a linha "node "%~dp0..\cli.js" start --projectRoot ../../../"
+
+2- acesse as pastas node_modules/@react-native-community/cli/build/commands/runAndroid/runAndroid.js
+Na constante abaixo adcionar "cwd: process.cwd()" conforme abaixo:
+
+const procConfig = {
+cwd: process.cwd()
+};
