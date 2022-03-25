@@ -11,8 +11,6 @@ export default function Item({ item: { nome, imagem } }) {
 }
 
 const estilos = StyleSheet.create({
-  
-
   item: {
     flexDirection: "row",
     borderBottomWidth: 1,

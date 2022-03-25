@@ -2,8 +2,8 @@ import React from "react";
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import Detalhes from "./componentes/Detalhes";
 import Topo from "./componentes/Topo";
-
 import Item from "./componentes/Item";
+import Texto from "../../componentes/Texto";
 
 export default function Cesta({ topo, detalhes, itens }) {
   return;
@@ -13,11 +13,13 @@ export default function Cesta({ topo, detalhes, itens }) {
       renderItem={Item}
       keyExtractor={({ nome }) => nome}
       ListHeaderComponent={() => {
+        
         return;
         <>
           <Topo {...topo} />
           <View style={estilos.cesta}>
             <Detalhes {...detalhes} />
+            <Texto style={estilos.titulo}>{itens.titulo}</Texto>
           </View>
         </>;
       }}
